@@ -1,0 +1,69 @@
+.featured-propertie {
+  margin: rem(45px) 0 rem(25px);
+  .container {
+    overflow: hidden;
+  }
+  &__heading {
+    font-size: rem(20px);
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    @include mq(medium) {
+      font-size: rem(24px);
+    }
+  }
+  &__wrappper {
+    display: flex;
+    align-items: center;
+    gap: rem(25px);
+    margin-top: rem(15px);
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  &__item {
+    flex: 0 0 85%;
+    @include mq(medium) {
+      flex: 1;
+    }
+  }
+  &__image-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 55.26%;
+  }
+  &__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__name {
+    font-size: rem(20px);
+    font-weight: 600;
+    color: #000;
+  }
+  &__city {
+    font-size: rem(15px);
+    color: #000;
+    margin: rem(10px) 0 rem(8px);
+  }
+  &__rating-wrapper {
+    margin-top: rem(15px);
+  }
+  &__rating-number {
+    background-color: #003580;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    margin-right: 10px;
+    font-weight: 700;
+  }
+  &__rating-text {
+    display: inline;
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  padding: rem(16px) 0;
+  &__lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(15px);
+    @include mq(medium) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  &__list {
+    list-style: none;
+  }
+  &__list-item {
+    display: none;
+    &:first-child {
+      display: block;
+    }
+    @include mq(medium) {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: rem(8px);
+      }
+    }
+  }
+  &__text {
+    text-align: center;
+    padding: rem(15px) 0 rem(35px);
+  }
+}
+//  style for IE Browser
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+}

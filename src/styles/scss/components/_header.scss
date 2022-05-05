@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  padding: rem(25px) 0;
+  background-color: #003580;
+  &--sticky {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    a {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+  &__Link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(15px);
+  }
+  &__Link {
+    color: #fff;
+    font-size: rem(16px);
+    text-transform: capitalize;
+  }
+}
+//  style for IE Browser
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+}

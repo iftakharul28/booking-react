@@ -1,0 +1,107 @@
+// Color Variables
+// --dark-navy: #020c1b;
+// --navy: #0a192f;
+// --light-navy: #112240;
+// --lightest-navy: #233554;
+// --navy-shadow: rgba(2,12,27,0.7);
+// --dark-slate: #495670;
+// --slate: #8892b0;
+// --light-slate: #a8b2d1;
+// --lightest-slate: #ccd6f6;
+// --white: #e6f1ff;
+// --green: #64ffda;
+// --green-tint: rgba(100,255,218,0.1);
+// --pink: #f57dff;
+// --blue: #57cbff;
+
+$primary_text: #ccd6f6;
+$secondary_text: #8892b0;
+$primary_text_white: #ffffff;
+$primary_text_black: #000000;
+$orange_text: #d65b36;
+$primary_text_light: #8ab3cf;
+$primary_text_green: #64ffda;
+
+// Background color
+$primary_background: #ffffff;
+$secondary_background: #0a192f;
+$primary_background_light: #dfe6ed;
+$secondary_background_light: #d65b361a;
+$alert_background_light: #f5f5f5;
+$vanilla_background: #d09786;
+$border_background_color: #a1a6b0;
+
+// Icon color
+$primary_icon: #ffffff;
+$secondary_icon: #182642;
+$primary_icon_light: #8ab3cf;
+$secondary_icon_light: #d65b36;
+
+// Others color
+$button_color: #2446c0;
+$link_color: #2446c0;
+$hover_color: #1331a0;
+$button_border: #182642;
+$border_color: #64ffda;
+$button_border_secondary: #48505a;
+$shadow_color: #afafaf;
+
+// Font Variables
+// --fz-xxs: 12px;
+// --fz-xs: 13px;
+// --fz-sm: 14px;
+// --fz-md: 16px;
+// --fz-lg: 18px;
+// --fz-xl: 20px;
+// --fz-xxl: 22px;
+// --fz-heading: 32px;
+$h1: 48px;
+$h1-md: 38px;
+$h2: 38px;
+$h2-md: 30px;
+$h3: 22px;
+$h3-md: 20px;
+$h4: 18px;
+$h5: 16px;
+$h6: 15px;
+
+// Font-Weight Variables
+$medium: 500;
+$semi_bold: 600;
+$black: 900;
+
+// Font Variables
+$primary-font: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system,
+  system-ui, sans-serif;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1920px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'extra-small': 320px,
+  'small': 640px,
+  'medium': 768px,
+  'medium-small': 980px,
+  'large': 1024px,
+  'medium-large': 1080px,
+  'extra-large': 1280px,
+  'double-extra-large': 1536px,
+) !default;
+
+// 1. Configuration and helpers
+@import 'abstracts/functions', 'abstracts/mixins';
+
+// 2. Base stuff
+@import 'base/normalize', 'base/typography', 'base/helpers';
+
+// 3. Components
+@import 'components/header', 'components/footer', 'components/hero',
+  'components/featured', 'components/property-list',
+  'components/featured-properties', 'components/mail';
+
+// 4. templates
+@import 'templates/home';

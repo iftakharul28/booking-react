@@ -1,0 +1,47 @@
+.property-list {
+  .container {
+    overflow: hidden;
+  }
+  &__heading {
+    font-size: rem(20px);
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    @include mq(medium) {
+      font-size: rem(24px);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(20px);
+    margin-top: rem(15px);
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  &__item {
+    cursor: pointer;
+    flex: 0 0 85%;
+    @include mq(medium) {
+      flex: 1;
+    }
+  }
+  &__image {
+    object-fit: cover;
+    height: rem(150px);
+    width: 100%;
+  }
+  &__item-heading {
+    font-size: rem(18px);
+    color: #000;
+  }
+  &__item-subheading {
+    font-size: rem(14px);
+    font-weight: 300;
+    color: #000;
+  }
+}
