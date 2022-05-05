@@ -28,7 +28,10 @@
   }
   &__text {
     text-align: center;
-    padding: rem(15px) 0 rem(35px);
+    padding: rem(15px) 0;
+    @include mq(medium) {
+      padding: rem(15px) 0 rem(35px);
+    }
   }
 }
 //  style for IE Browser
