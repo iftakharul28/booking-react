@@ -8,7 +8,9 @@ import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { format } from 'date-fns';
+import { useNavigate } from 'react-router-dom';
 const Hero = ({ type }) => {
+  const [destination, setDestination] = useState([]);
   const [openDate, setOpenDate] = useState(false);
   const [openOption, setopenOption] = useState(false);
   const [date, setDate] = useState([
@@ -23,6 +25,7 @@ const Hero = ({ type }) => {
     childern: 0,
     room: 1,
   });
+  const navigate = useNavigate();
   const handleOption = (name, operation) => {
     setOptions((prev) => {
       return {
@@ -31,7 +34,9 @@ const Hero = ({ type }) => {
       };
     });
   };
-
+  const handleSearch = () => {
+    navigate('/hotels', { state: { destination, date, options } });
+  };
   return (
     <div className="hero">
       <div className="container">
@@ -85,6 +90,7 @@ const Hero = ({ type }) => {
                     type="text"
                     placeholder="Where are you going?"
                     className="hero__search-input"
+                    onChange={(e) => setDestination(e.target.value)}
                   />
                 </div>
                 <div className="hero__search-item">
@@ -175,7 +181,9 @@ const Hero = ({ type }) => {
                     </div>
                   )}
                 </div>
-                <button className="hero__search-button">search</button>
+                <button className="hero__search-button" onClick={handleSearch}>
+                  search
+                </button>
               </div>
             </>
           )}

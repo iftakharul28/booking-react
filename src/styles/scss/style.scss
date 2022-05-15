@@ -101,7 +101,7 @@ $breakpoints: (
 // 3. Components
 @import 'components/header', 'components/footer', 'components/hero',
   'components/featured', 'components/property-list',
-  'components/featured-properties', 'components/mail';
+  'components/featured-properties', 'components/mail', 'components/search-item';
 
 // 4. templates
-@import 'templates/home';
+@import 'templates/home', 'templates/list-page';

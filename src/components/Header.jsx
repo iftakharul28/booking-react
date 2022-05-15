@@ -8,9 +8,6 @@ const Header = () => {
             <a href="/">Booking</a>
           </div>
           <div className="header__Link-wrapper">
-            <a className="header__Link" href="/hotels">
-              hotel
-            </a>
             <a className="header__Link" href="/register">
               Register
             </a>

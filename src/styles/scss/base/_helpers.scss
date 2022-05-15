@@ -24,12 +24,10 @@
   padding-left: rem(20px);
   padding-right: rem(20px);
   width: 100%;
-  @include mq('375px') {
-    padding-left: rem(30px);
-    padding-right: rem(30px);
-  }
   @include mq('600px') {
     width: 95%;
+    padding-left: rem(30px);
+    padding-right: rem(30px);
   }
   @include mq(extra-large) {
     width: 1200px;

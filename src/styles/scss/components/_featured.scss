@@ -40,14 +40,14 @@
   &__heading {
     font-size: rem(25px);
     font-weight: 700;
-    @include mq(medium) {
+    @include mq(medium-large) {
       font-size: rem(45px);
     }
   }
   &__subheading {
     font-size: rem(16px);
     font-weight: 400;
-    @include mq(medium) {
+    @include mq(medium-large) {
       font-size: rem(25px);
       font-weight: 700;
     }

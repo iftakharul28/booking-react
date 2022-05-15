@@ -5,3 +5,4 @@ export { default as Featured } from './Featured';
 export { default as PropertyList } from './PropertyList';
 export { default as FeaturedProperties } from './FeaturedProperties';
 export { default as Mail } from './Mail';
+export { default as SearchItem } from './SearchItem';
