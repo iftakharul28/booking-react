@@ -21,6 +21,9 @@ body {
   position: fixed;
   inset: 0;
 }
+.body--hidden {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }

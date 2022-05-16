@@ -22,32 +22,6 @@ function List() {
   // ]);
   // Sticky Menu Area
 
-  useEffect(() => {
-    window.addEventListener('scroll', isSticky);
-    return () => {
-      window.removeEventListener('scroll', isSticky);
-    };
-  });
-
-  /* Method that will fix header after a specific scrollable */
-  const isSticky = () => {
-    const listSearch = document.querySelector('.list__search');
-    const listResult = document.querySelector('.list__result');
-    const footer = document.querySelector('.footer');
-    console.log(listResult.scrollHeight);
-
-    const scrollTop = window.scrollY;
-
-    if (scrollTop >= 120) {
-      if (listSearch.clientHeight + scrollTop <= listResult.clientHeight) {
-        listSearch.classList.add('list__search--sticky');
-      } else {
-        listSearch.classList.remove('list__search--sticky');
-      }
-    } else {
-      listSearch.classList.remove('list__search--sticky');
-    }
-  };
   return (
     <>
       <Hero type="list" />

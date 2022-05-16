@@ -62,6 +62,7 @@
     padding: 3px;
     margin-right: 10px;
     font-weight: 700;
+    border-radius: calc(32px / 5.5) calc(32px / 5.5) calc(32px / 5.5) 0;
   }
   &__rating-text {
     display: inline;

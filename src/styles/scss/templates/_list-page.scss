@@ -1,5 +1,5 @@
 .list {
-  margin: rem(20px) 0 rem(30px);
+  margin: rem(35px) 0 rem(30px);
   &__wrapper {
     @include mq(medium-large) {
       display: flex;
@@ -8,8 +8,10 @@
   }
   &__search-wrapper {
     @include mq(medium-large) {
-      min-width: rem(350px);
+      flex: 0 0 30%;
       height: 100%;
+      position: sticky;
+      top: rem(50px);
     }
   }
   &__search {
@@ -20,11 +22,7 @@
     @include mq(medium-large) {
       border-radius: rem(10px);
       padding: rem(25px) rem(15px);
-      &--sticky {
-        position: fixed;
-        min-width: rem(350px);
-        top: rem(50px);
-      }
+      margin-bottom: rem(55px);
     }
   }
   &__heading {
